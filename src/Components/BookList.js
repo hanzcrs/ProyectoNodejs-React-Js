@@ -3,6 +3,8 @@ import React from 'react';
 const BookList = ({book, setBook, books, setListUpdated}) => {
 
 
+      // se ejecuta desde servidor api el metodo de eliminacion
+      // tomando el id que se selecciona con handleDelete
     const handleDelete = id => {
         const requestInit = {
             method: 'DELETE'
@@ -16,7 +18,6 @@ const BookList = ({book, setBook, books, setListUpdated}) => {
 
     let{Nombre, Apellido, CedulaIdentidad, Domicilio} = book
     const handleUpdate = id => {
-        CedulaIdentidad = parseInt(CedulaIdentidad, 10)
         //validación de los datos
         if (Nombre === '' || Apellido === '' || CedulaIdentidad <= 0  || Domicilio === '') {
             alert('Todos los campos son obligatorios')
