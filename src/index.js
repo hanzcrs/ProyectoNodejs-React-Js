@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+//  se agrego esto para router = import { BrowserRouter } from 'react-router-dom';
+// ademas en vez de reac.strict cambiar a browserRouter para enrutado 
 const root = ReactDOM.createRoot
 (document.getElementById('PaginaPrincipal'));
 root.render(
-  <React.StrictMode>
+  <BrowserRouter> 
     <App/>
-  </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
