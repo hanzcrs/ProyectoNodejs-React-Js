@@ -27,7 +27,7 @@ function App() {
 
   return (
     <Fragment>
-      <Navbar brand='Library App'/>
+      <Navbar brand='Ingreso profesores'/>
         <div className="container">
           <div className="row">
           <div className="col-7">
